@@ -1,6 +1,6 @@
 /*
 Self Portrait 
-Hard Code 
+v1 
 By Mohammad Islam
 
 */
@@ -10,16 +10,24 @@ function setup() {
 	createCanvas(640, 360);
     background(220);
 }
+var headStroke = "black"
+var headColor = "tan"
+var headX = 220
+var headY = 90
+var headSize = 200
+
+var eyeColor = "#0CE83A"
+
 
 function draw() {
-    // fill("#FEB616")
-	stroke('black');
-    fill('tan');
-    rect (220, 90, 200, 240);
+    // Head
+	stroke(headStroke);
+    fill(headColor);
+    rect (headX, headY, headSize, headSize + 40);
     
     //Left Eye
     stroke('#0DFF84');
-    fill('#0CE83A');
+    fill();
     ellipse(270, 150, 50);
     
     //Left Pupil
