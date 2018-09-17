@@ -10,13 +10,39 @@ function setup() {
 	createCanvas(640, 360);
     background(220);
 }
+
+//headVar
 var headStroke = "black"
 var headColor = "tan"
 var headX = 220
 var headY = 90
 var headSize = 200
 
+//eyeVar
 var eyeColor = "#0CE83A"
+var eyeStrokeFill = "#0DFF84"
+var pupilStroke = "#17FF00"
+var eyeX = 270
+var eyeY = 150
+var eyeSize = 50
+
+//noiseVar
+var noiseColor = "orange"
+
+//mouth
+var mouthColor = "red"
+
+//teeth
+var teethFill = "white"
+var teethStroke = "yellow"
+
+//arc Mouth teeth Noise
+var arcX = 320
+var arcY = 200
+var arcSize = 100
+var arcSNS = 0
+
+
 
 
 function draw() {
@@ -26,39 +52,39 @@ function draw() {
     rect (headX, headY, headSize, headSize + 40);
     
     //Left Eye
-    stroke('#0DFF84');
-    fill();
-    ellipse(270, 150, 50);
+    stroke(eyeStrokeFill);
+    fill(eyeColor);
+    ellipse(eyeX, eyeY, eyeSize);
     
     //Left Pupil
-    stroke('#17FF00');
-    fill('#0DFF84');
-    ellipse(270, 150, 30);
+    stroke(pupilStroke);
+    fill(eyeStrokeFill);
+    ellipse(eyeX, eyeY, eyeSize - 20);
     
     //Right Eye
-    stroke('#0DFF84');
-    fill('#0CE83A');
-    ellipse(370, 150, 50);
+    stroke(eyeStrokeFill);
+    fill(eyeColor);
+    ellipse(eyeX + 100, eyeY, eyeSize);
     
     //Right Pupil
-    stroke('#17FF00');
-    fill('#0DFF84');
-    ellipse(370, 150, 30);
+    stroke(pupilStroke);
+    fill(eyeStrokeFill);
+    ellipse(eyeX + 100, eyeY, eyeSize - 20);
     
     //Noise
-    stroke("orange");
-    fill('orange');
-    arc(320, 200, 50, 50, 0, PI);
+    stroke(noiseColor);
+    fill(noiseColor);
+    arc(arcX, arcY, arcSize - 50, arcSize -50, arcSNS, PI);
     
     //Mouth
-    stroke("red");
-    fill('red');
-    arc(320, 250, 100, 100, 0, PI);
+    stroke(mouthColor);
+    fill(mouthColor);
+    arc(arcX, arcY + 50, arcSize, arcSize, arcSNS, PI);
     
     //Teeth
-    stroke("yellow");
-    fill('white');
-    arc(320, 255, 75, 75, 0, PI);
+    stroke(teethStroke);
+    fill(teethFill);
+    arc(arcX, arcY + 55, arcSize -25 ,arcSize- 25, arcSNS, PI);
     
     
 
