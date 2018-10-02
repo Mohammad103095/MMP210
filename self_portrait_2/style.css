@@ -30,6 +30,10 @@ h2,p,ul{
 ul{
     text-align: center;
 }
+#instrutions{
+    font-size: 1em;
+    
+}
 #Pic{
     border: 5px groove hotpink;
     padding: 5px;

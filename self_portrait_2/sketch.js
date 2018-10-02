@@ -1,57 +1,64 @@
 /*
 Self Portrait 
-v2
+v3
 By Mohammad Islam
 */
 
+    //eyeVar
+    var eyeColor = "#0CE83A";
+    var eyeStrokeFill = "#0DFF84";
+    var pupilStroke = "#17FF00";
+    var eyeSize = 50;
+
+    //headVar
+    var headStroke = "tan";
+    var headColor = "tan";
+    var headSize = 200;
+
+    //noseVar
+    var noseColor = "orange";
+
+    //mouthVar
+    var mouthColor = "red";
+
+    //teethVar
+    var teethFill = "white";
+    var teethStroke = "yellow";
+
+    //arc mouth teeth noise
+
+    var arcSize = 100;
+    var arcSNS = 0;
+
+
 
 function setup() {
-	createCanvas(640, 360);
-    background(220);
+	createCanvas(750, 560); 
 }
 
 
 function draw() {
-    background(220);
-      
+    background(120, 20);
 
-//eyeVar
-var eyeColor = "#0CE83A"
-var eyeStrokeFill = "#0DFF84"
-var pupilStroke = "#17FF00"
-var eyeX = mouseX;
-var eyeY = mouseY;
-var eyeSize = frameCount;
-
-//headVar
-var headStroke = "black"
-var headColor = "tan"
-var headX = mouseX -50;
-var headY = mouseY -60;
-var headSize = 200
-
-//noseVar
-var noseColor = "orange"
-
-//mouth
-var mouthColor = "red"
-
-//teeth
-var teethFill = "white"
-var teethStroke = "yellow"
-
-//arc Mouth teeth Noise
-var arcX = mouseX +50;
-var arcY = mouseY +60;
-var arcSize = 100
-var arcSNS = 0
+    //mouseVarEyes
+    var eyeX = mouseX;
+    var eyeY = mouseY;
     
+    //mouseVarHead
+    var headX = mouseX -50;
+    var headY = mouseY -60;
 
-   // Head
+    //mouseVarNose,Teeth,Noise
+    var arcX = mouseX +50;
+    var arcY = mouseY +60;
+
+    // Head
+    var r = mouseX; // red;
+	var g = 45; // green
+	var b = mouseY; // blue
+	fill(r, g, b);
 	stroke(headStroke);
-    fill(headColor);
     rect (headX, headY, headSize, headSize + 40);
-
 
     //Left Eye
     stroke(eyeStrokeFill);
@@ -73,9 +80,6 @@ var arcSNS = 0
     fill(eyeStrokeFill);
     ellipse(eyeX + 100, eyeY, eyeSize - 20);
     
- 
-    
-    
     //Nose
     stroke(noseColor);
     fill(noseColor);
@@ -92,5 +96,10 @@ var arcSNS = 0
     arc(arcX, arcY + 55, arcSize -25 ,arcSize- 25, arcSNS, PI);
     
     
+}
 
+
+function mousePressed() {
+    eyeSize = map(mouseX, height, 50, 80, 50);
+    //eyeSize += 5;
 }
