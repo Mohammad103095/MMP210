@@ -47,5 +47,4 @@ function draw() {
     text("The Same Thing That Makes You Cry", textX, textY -5);
     text("Makes Me Smile", textX, textY +35);
     
- 
 }
