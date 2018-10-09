@@ -36,8 +36,8 @@ function setup() {
 function draw() {
     background(b);
     
-    image(lebron, imgX, imgY, width, height/2);  
-    image(curry, imgX, height/2, width, height/2);
+    image(Lebron, imgX, imgY, width, height/2);  
+    image(Curry, imgX, height/2, width, height/2);
 
     fill(t);
     textSize(ts);
