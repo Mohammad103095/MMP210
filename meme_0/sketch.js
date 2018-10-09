@@ -23,8 +23,6 @@ var ts = 45; //TextSize
 var textX = 0 //x position
 var textY = 400 // y position
  
-
-
 function preload() {
     lebron = loadImage("Lebron.jpg");
     curry = loadImage("Curry.jpg");
