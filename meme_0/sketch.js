@@ -25,7 +25,7 @@ var textY = 400 // y position
  
 function preload() {
     lebron = loadImage("Lebron.jpg");
-    curry = loadImage("Curry.jpg");
+    curry = loadImage("Curry.JPG");
 }
 
 function setup() {
