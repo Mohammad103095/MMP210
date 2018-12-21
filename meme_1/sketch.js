@@ -28,7 +28,7 @@ function draw() {
 
 function mouseClicked() {
         background(45);
-        if (mouseX > 250){
+        if (mouseX > 300){
             text("Makes Me Smile", 150, 500);
             image(curry, width/2, height/2, width/2, height/2);
         } else {

@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-image: url("BackGround.jpeg");
   color: white;
+  text-align: center;
 }
 
 #container {
@@ -59,4 +60,28 @@ a {
 
 a:hover {
   color: hotpink;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.msg {
+	display: none;
+	margin-top: 50px;
+	color: red;
+	font-size: 65px;
+	z-index: -1;
+}
+.instru{
+    font-size: 2em;
+    
+}
+
+.finished {
+	display: block;
+	text-align: center;
+}
+.finished .msg {
+	display: block;
 }
